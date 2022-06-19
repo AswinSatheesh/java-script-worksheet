@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFun() {
+            var a = 100;
+            // alert("Value of a is : " + a);
+            try {
+                alert("Value of variable a is : " + a);
+            } catch (e) {
+                alert("Error:" + e.description);
+            } finally {
+                alert("Finally block will always get execute.");
+                console.log("Always execute");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p>click the following to see the result</p>
+    <form action="">
+        <input type="button" value="Click me" name="submit" id="" onclick="myFun();" />
+    </form>
+</body>
+
+</html>
